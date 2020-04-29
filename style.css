@@ -146,7 +146,7 @@ body, html {
 
 
 .changerev .bar1 {
-  animation-duration: 1.2s;
+  animation-duration: 1s;
   animation-name: changerev1;
   animation-fill-mode: both;
   
@@ -156,7 +156,7 @@ body, html {
 }
 @keyframes changerev1 {
   from {
-    transform: rotate(-45deg) translate(-10px, 0px);
+    transform: rotate(-45deg) translate(-8px, 0px);
 
   }
 
@@ -175,7 +175,7 @@ body, html {
 
 
 .changerev .bar2 {
-  animation-duration: 1.4s;
+  animation-duration: 1.2s;
   animation-name: changerev2;
   animation-fill-mode: both;
   
@@ -183,7 +183,7 @@ body, html {
 
 @keyframes changerev2 {
   from {
-    transform: rotate(45deg) translate(-10px, 0px);
+    transform: rotate(45deg) translate(-8px, 0px);
 
   }
 
