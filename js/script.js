@@ -1,11 +1,10 @@
-window.onload = function() {
+setTimeout(function() {
   document.getElementById("l-back").style.display = "none";
   document.getElementById("loader").style.display = "none";
   document.getElementById("maindiv").style.display = "initial";
-  document.getElementById("navbar").style.display = "inline-block";
-}
-
-
+  document.getElementById("navbar").style.width = "90%";
+  document.getElementById("leftc").style.opacity = "1";
+}, 2000);
 
 function menu(x) {
   if (x.classList.contains("change")) {
@@ -24,3 +23,9 @@ function menu(x) {
 }
 
 
+// window.onload = function() {
+//   document.getElementById("l-back").style.display = "none";
+//   document.getElementById("loader").style.display = "none";
+//   document.getElementById("maindiv").style.display = "initial";
+//   document.getElementById("navbar").style.display = "inline-block";
+// }
