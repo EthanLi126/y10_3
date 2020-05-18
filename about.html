@@ -1,16 +1,19 @@
 <!DOCTYPE html>
-<html style="overflow-y: hidden">
+<html>
+<title>Contact</title>
 <head>
-	<title>Watanabe</title>
-	<link rel="shortcut icon" type="image/x-icon" href="images/longchamps.png">
-	<link rel="stylesheet" type="text/css" href="style1.css">
-	<script src="js/script1.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style1.css">
+    <link rel="shortcut icon" type="image/x-icon" href="images/longchamps.png"/>
+    <script src="js/script.js"></script>
+
+
 </head>
 <body>
 
 <!-- Loader -->
 <div id="l-back">
-    <div style="background-image:url(images/watanabe.png);" id="loader"> </div>
+    <div style="background-image:url(images/a3a1.png);" id="loader"> </div>
 </div>
 
 <!-- Navbar -->
@@ -36,7 +39,6 @@
   <div class="overlay-content">
     <div id = "scontainer">
       <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for brands.." title="Type in a brand" autocomplete="off">
-
       <ul id="myUL">
         <li><a href="advan.html">Advan</a></li>
         <li><a href="courreges.html">Courrèges</a></li>
@@ -51,72 +53,44 @@
   </div>
 </div>
 
+<!-- Maindiv -->
 <div id="maindiv">
-	<div class="maintext show-on-scroll">Watanabe</div>
+ 
+  <div class="bcontainer">
+    <!-- Slideshow -->
+    <div class="fg-slider show-on-scroll" id="slider-1">
+        <img src="images/hero1.png" alt="">
+        <img src="images/hero2.png" alt="">
+        <img src="images/hero3.png" alt="">
+        <img src="images/hero4.jpg" alt="">
+        <img src="images/hero5.jpg" alt="">
+    </div>
 
-	<div class="row show-on-scroll">
-	  <div class="column"onclick="openTab('b1');">
-	    <div class="card" style="background-image: url(images/watanabe/8spoke.jpg)">
-	    </div>
-	  </div>
-
-	  <div class="column"onclick="openTab('b2');">
-	    <div class="card"style="background-image: url(images/watanabe/4s.jpg)">
-	    </div>
-	  </div>
-	  
-
-
-  <div id="b1" class="containerTab">
-    <span onclick="this.parentElement.style.width='0%';this.parentElement.style.opacity='0';" class="closebtn">&times;</span>
-    <h2>Watanabe 8 Spoke</h2>
-    <div class="tabImage"style="background-image: url(images/watanabe/8spoke.jpg)"></div>
-    <table>
-      <tr>
-        <td>Production Years:</td>
-        <td>1968-Present</td>
-
-      </tr>
-      <tr>
-        <td>Wheel Diameters (Inches):</td>
-        <td>13, 14, 15, 16, 17</td>
-
-      </tr>
-      <tr>
-        <td>Construction:</td>
-        <td>Cast</td>
-      </tr>
-    </table>
-  </div>
-
-  <div id="b2" class="containerTab">
-    <span onclick="this.parentElement.style.width='0%';this.parentElement.style.opacity='0';" class="closebtn">&times;</span>
-    <h2>Watanabe 4S</h2>
-    <div class="tabImage"style="background-image: url(images/watanabe/4s.jpg)"></div>
-    <table>
-      <tr>
-        <td>Production Years:</td>
-        <td>1978-Present</td>
-
-      </tr>
-      <tr>
-        <td>Wheel Diameters (Inches):</td>
-        <td>10, 13, 14</td>
-
-      </tr>
-      <tr>
-        <td>Construction:</td>
-        <td>Cast</td>
-      </tr>
-    </table>
-  </div>
+    <!-- Hero Text -->
+    <div style = "margin-left:5%; margin-right:5%;">
+      <a style = " top:250px; font-size:30px; font-weight:100" class="maintext show-on-scroll">This site serves as a visually pleasing (I hope) catalogue for vintage Japanese wheels, especially ones from the 70s 80s and 90s. The name smol wheels comes from the fact that most aftermarket wheels from this era are quite small, ranging from 10 to 15 inches. </a>
+      <a style = " top:250px; font-size:30px; font-weight:100" class="maintext show-on-scroll" href="https://github.com/EthanLi126/y10_3/wiki">Documentation about this site</a>
+    </div>
+    </div>
+  </div>  
 
 
 
 
+
+
+</div>
 
 
 <script>
+    new FgSlider('slider-1', {
+        autoplay: true, // autoplay on / off
+        effect: 'slide', // fade, scale, slide, slide-top
+        duration: 6000, // duration till the next slide
+        bullets: false, // show / hide bullets
+    });
+
+
 
     // Detect request animation frame
 var scroll = window.requestAnimationFrame ||
