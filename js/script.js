@@ -43,10 +43,6 @@ function menu(x) {
     x.classList.add("change");
     document.getElementById("menu").style.height = h[1];
     document.getElementById("menu2").style.height = h[1];
-    for (var i = 0; i < y.length; i++) {
-    y[i].classList.remove('is-visible');}
-    for (var i = 0; i < z.length; i++) {
-    z[i].classList.remove('is-visible');}
   }
 
 }
